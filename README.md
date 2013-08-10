@@ -1,7 +1,7 @@
 homebrew-misc
 =============
 
-Miscellaneous formulae.
+Miscellaneous formulae.  Formulae may be a work-in-progress and therefore do no necessarily work.
 
 ## Install ##
 
