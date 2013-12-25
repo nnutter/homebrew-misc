@@ -10,7 +10,16 @@ class GitBd < Formula
         system "make install prefix=#{prefix}"
     end
 
-    def caveats
-        system "make caveats prefix=#{prefix}"
+    def caveats; <<-EOS.undent
+            If #{prefix}/etc/profile.d/*.sh are not already automatically sourced you should add the following to your ~/.bash_profile:
+
+              for script in #{prefix}/etc/profile.d/*.sh; do
+                if [ -r $script ]; then
+                  source $script
+                fi
+              done
+
+            This will enable the use of the 'bd' command which makes it easy to switch between a repo's branchdirs. 'git-bd' is available regardless of whether you choose to do this.
+        EOS
     end
 end
