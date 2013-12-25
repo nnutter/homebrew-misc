@@ -11,9 +11,9 @@ class GitBd < Formula
     end
 
     def caveats; <<-EOS.undent
-            If #{prefix}/etc/profile.d/*.sh are not already automatically sourced you should add the following to your ~/.bash_profile:
+            If #{etc}/profile.d/*.sh are not already automatically sourced you should add the following to your ~/.bash_profile:
 
-              for script in #{prefix}/etc/profile.d/*.sh; do
+              for script in #{etc}/profile.d/*.sh; do
                 if [ -r $script ]; then
                   source $script
                 fi
