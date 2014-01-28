@@ -8,7 +8,8 @@ class GitBd < Formula
 
     def install
         system "make install prefix=#{prefix}"
-        system "make install-docs prefix=#{prefix}"
+        man1.mkpath
+        man1.install ['git-bd.1']
     end
 
     def caveats; <<-EOS.undent
