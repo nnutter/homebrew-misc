@@ -2,11 +2,9 @@ require 'formula'
 
 class GitBd < Formula
     homepage 'https://github.com/nnutter/git-bd'
-    url 'https://github.com/nnutter/git-bd/archive/v0.1.7.zip'
+    url 'https://github.com/nnutter/git-bd/archive/v0.1.8.zip'
     head 'https://github.com/nnutter/git-bd.git'
-    sha1 '78b2d693ffa4bc5dc51842df4272aca494936ffc'
-
-    depends_on 'pandoc' => :build
+    sha1 '5ea755ab05ccfc8af696237220e8a3e0ef6aa600'
 
     def install
         system "make install prefix=#{prefix}"
