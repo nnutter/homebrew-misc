@@ -2,12 +2,15 @@ require 'formula'
 
 class GitBd < Formula
     homepage 'https://github.com/nnutter/git-bd'
-    url 'https://github.com/nnutter/git-bd/archive/v0.1.6.zip'
+    url 'https://github.com/nnutter/git-bd/archive/v0.1.7.zip'
     head 'https://github.com/nnutter/git-bd.git'
-    sha1 'c53fada65d163cc0eab839995baea9ecdf7179a8'
+    sha1 '78b2d693ffa4bc5dc51842df4272aca494936ffc'
+
+    depends_on 'pandoc' => :build
 
     def install
         system "make install prefix=#{prefix}"
+        system "make install-docs prefix=#{prefix}"
     end
 
     def caveats; <<-EOS.undent
