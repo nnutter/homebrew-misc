@@ -25,6 +25,24 @@ class Xnu < Formula
     when "10.8.5"
       url 'http://opensource.apple.com/tarballs/xnu/xnu-2050.48.11.tar.gz'
       sha1 '1f6860148f8231a53a6b393aa1af589cdedfc70c'
+    when "10.9"
+      url 'http://opensource.apple.com/tarballs/xnu/xnu-2422.1.72.tar.gz'
+      sha1 'c7bdc40396df3c51ece934c0e3b4a19b063ea34c'
+    when "10.9.1"
+      url 'http://opensource.apple.com/tarballs/xnu/xnu-2422.1.72.tar.gz'
+      sha1 'c7bdc40396df3c51ece934c0e3b4a19b063ea34c'
+    when "10.9.2"
+      url 'http://opensource.apple.com/tarballs/xnu/xnu-2422.90.20.tar.gz'
+      sha1 '4aa6b80cc0ff6f9b27825317922b51c5f33d5bae'
+    when "10.9.3"
+      url 'http://opensource.apple.com/tarballs/xnu/xnu-2422.100.13.tar.gz'
+      sha1 '3c02b0b43947d4af3363ada0c77310d4c1e501b5'
+    when "10.9.4"
+      url 'http://opensource.apple.com/tarballs/xnu/xnu-2422.110.17.tar.gz'
+      sha1 '64eff89852eaa10b298ee58c0a1c92da8283f459'
+    when "10.9.5"
+      url 'http://opensource.apple.com/tarballs/xnu/xnu-2422.115.4.tar.gz'
+      sha1 '48207e250422be7e78d238cd8b4d741ac98856df'
   else
     onoe "XNU source not configured for '#{os_vers}'!"
   end
