@@ -3,7 +3,7 @@ require 'formula'
 # Documentation: https://github.com/mxcl/homebrew/wiki/Formula-Cookbook
 # PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
 
-class Xnu < Formula
+class XnuDev < Formula
   homepage 'http://www.opensource.apple.com'
   os_vers = `sw_vers -productVersion`.chomp
   case os_vers
