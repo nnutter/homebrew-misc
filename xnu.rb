@@ -43,6 +43,9 @@ class Xnu < Formula
     when "10.9.5"
       url 'http://opensource.apple.com/tarballs/xnu/xnu-2422.115.4.tar.gz'
       sha1 '48207e250422be7e78d238cd8b4d741ac98856df'
+    when "10.10"
+      url 'http://opensource.apple.com/tarballs/xnu/xnu-2782.1.97.tar.gz'
+      sha1 'c99cf8ec04c29d40b771652241dd325e4977d92b'
   else
     onoe "XNU source not configured for '#{os_vers}'!"
   end
